@@ -1,5 +1,5 @@
-var express = require('express');
-var morgan = require('morgan');
+var express = require('express'); //Express for deployment and initialzation of servers
+var morgan = require('morgan'); //for logs
 var path = require('path');
 
 var app = express();
