@@ -1,0 +1,16 @@
+<html>
+<head>
+  <title>
+    New Article -1
+   </title>
+</head>
+<body>
+  <div>
+    <a href="/">home</a>
+   </div>
+   <div>
+      <p>
+        My content here
+       </p>
+   </div>
+</html>
