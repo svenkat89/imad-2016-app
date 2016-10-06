@@ -1,7 +1,7 @@
 console.log('Loaded!');
-var element = document.getelementById("image");
-var element1 = document.getelementById("main");
-element1.innerHTML="New World";
+var element = document.getElementById("image");
+var element1 = document.getElementById("main");
+element1.innerHTML='New World';
 var main = function(){
     element.onclick(function() {
         element.animate({
