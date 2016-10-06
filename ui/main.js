@@ -11,5 +11,5 @@ element1.innerHTML='New World';
 //    };
     
 element.onclick = function() {
-    img.style.marginRight="10px";
+    image.style.marginRight="10px";
 };
