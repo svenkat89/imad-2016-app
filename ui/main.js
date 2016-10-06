@@ -9,4 +9,4 @@ var main = function(){
         },200);
         });
     };
-$(document).ready(main);
+(document).ready(main);
