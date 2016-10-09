@@ -20,5 +20,5 @@ element.onclick = function() {
             new1.innerHTML=counter.toString();
           }
       }
-  }
+  };
   };
