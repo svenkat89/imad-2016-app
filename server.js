@@ -27,7 +27,7 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-var names;
+var names=[];
 app.get('/submit', function (req, res){
     //var name = req.params.name; //One way with parameter in the URL
     var name1 = req.query.name; // other way with using //submit?name=xxx
