@@ -1,7 +1,7 @@
 console.log('Loaded!');
-var element = document.getElementById("image");
+var element = document.getElementById('image');
 var counter=1;
-var element2 = document.getElementById("Butt");
+var element2 = document.getElementById('Butt');
 
 element.onclick = function() {
     element.style.marginRight='10px';
@@ -18,7 +18,7 @@ element2.onclick = function() {
       if(request.readystate==XMLHttpRequest.Done){
           if(request.status == 200){
             var counter = request.responseText;
-            var new1 = document.getElementById("count");
+            var new1 = document.getElementById('count');
             new1.innerHTML=counter.toString();
           }
       }
