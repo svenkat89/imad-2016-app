@@ -38,9 +38,9 @@ element2.onclick = function() {
       requestname.open('Get','http://svenkat89.imad.hasura-app.io/submit?name'+name1,true);
       requestname.send(null);
       //render the response as a list
-      request.onreadystatechange = function() {
-      if(request.readystate==XMLHttpRequest.Done){
-          if(request.status == 200){
+      requestname.onreadystatechange = function() {
+      if(requestname.readystate==XMLHttpRequest.Done){
+          if(requestname.status == 200){
                 var list='';
                 var nameresponse=request.responseText;//storin the response
                 nameresponse=JSON.parse(nameresponse);//converting to array again from JSON
