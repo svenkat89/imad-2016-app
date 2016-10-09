@@ -26,3 +26,19 @@ element2.onclick = function() {
     request.open('Get','http://svenkat89.imad.hasura-app.io/counter1',true);
   request.send(null);
   };
+  
+  //submit name
+  var name1 = document.getElementById('name');
+  var nameinput = name1.value;
+  var submit1 = document.getElementById('submit_btn');
+  
+  submit1.onclick = function() {
+      //send name to server
+      var requestname= new XMLHttpRequest();
+      requestname.open('Get','http://svenkat89.imad.hasura-app.io/submit',true);
+      requestname.send(null);
+      //render the response as a list
+  }
+      var list=
+  };
+  
