@@ -30,12 +30,13 @@ element2.onclick = function() {
   
   //submit name
   var nameInput = document.getElementById('name');
-  var name1 = nameInput.value;//get the value from the text box
+  //get the value from the text box
   var element3 = document.getElementById('submit_btn');
   
   element3.onclick = function() {
       //send name to server
       var requestname= new XMLHttpRequest();
+      var name1 = nameInput.value;
       requestname.open('Get','http://svenkat89.imad.hasura-app.io/submit?name'+name1,true);
       requestname.send(null);
       //render the response as a list
