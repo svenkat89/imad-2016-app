@@ -2,7 +2,7 @@ console.log('Loaded!');
 var element = document.getElementById('image');
 var counter=1;
 var element2 = document.getElementById('Butt');
-var element3 = document.getElementById('submit_btn');
+
 
 element.onclick = function() {
     element.style.marginRight='10px';
@@ -31,6 +31,7 @@ element2.onclick = function() {
   //submit name
   var nameInput = document.getElementById('name');
   var name1 = nameInput.value;//get the value from the text box
+  var element3 = document.getElementById('submit_btn');
   
   element3.onclick = function() {
       //send name to server
