@@ -12,10 +12,10 @@ app.get('/', function (req, res) {
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
-var counter =1;
+var counter=1;
 app.get('/counter1', function (req, res) {
-  counter = counter *2;
-  res.send(counter,toString());
+  counter = counter*2;
+  res.send(counter.toString());
 });
 
 app.get('/ui/main.js', function (req, res) {
