@@ -37,7 +37,7 @@ element2.onclick = function() {
       //send name to server
       var requestname= new XMLHttpRequest();
       var name1 = nameInput.value;
-      requestname.open('Get','http://svenkat89.imad.hasura-app.io/submit?name'+name1,true);
+      requestname.open('Get','http://svenkat89.imad.hasura-app.io/submit?name='+name1,true);
       requestname.send(null);
       //render the response as a list
       requestname.onreadystatechange = function() {
