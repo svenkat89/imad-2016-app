@@ -1,6 +1,7 @@
 var express = require('express'); //Express for deployment and initialzation of servers
 var morgan = require('morgan'); //for logs
 var path = require('path');
+var names=[];
 
 var app = express();
 app.use(morgan('combined'));
@@ -24,6 +25,11 @@ app.get('/ui/main.js', function (req, res) {
 
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+});
+app.get('/submit/:name', function (req, res) {
+    var name = req.params.name
+    names.push(name);
+  res.send(JSON.stringfy(names));
 });
 
 
