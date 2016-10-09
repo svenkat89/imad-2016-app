@@ -43,10 +43,11 @@ element2.onclick = function() {
       requestname.onreadystatechange = function() {
       if(requestname.readystate==XMLHttpRequest.Done){
           if(requestname.status == 200){
+                var list='';
                 var nameresponse=requestname.responseText;//storin the response
                 nameresponse=JSON.parse(nameresponse);//converting to array again from JSON
                 for(var i =0 ; i < nameresponse.length ; i++){
-                var list="<li>"+ nameresponse[i] +"</li>";
+                    list="<li>"+ nameresponse[i] +"</li>";
                 }
           var ul= document.getElementById('namelist');
           ul.innerHTML=list;
