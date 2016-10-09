@@ -1,12 +1,13 @@
 console.log('Loaded!');
 var element = document.getElementById("image");
-//var element1 = document.getElementById("main");
 var counter=1;
-//element1.innerHTML='New World';
+var element2 = document.getElementById("Butt");
+
 element.onclick = function() {
     element.style.marginRight='10px';
 };
-var element2 = document.getElementById("button");
+
+
 element2.onclick = function() {
   //Go to COunter 1 URL
   var request= new XMLHttpRequest();
