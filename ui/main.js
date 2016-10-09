@@ -18,6 +18,7 @@ element2.onclick = function() {
       if(request.readystate==XMLHttpRequest.Done){
           if(request.status == 200){
             var counter = request.responseText;
+            counter = counter *2;
             var new1 = document.getElementById('count');
             new1.innerHTML=counter.toString();
           }
