@@ -15,7 +15,7 @@ app.get('/ui/style.css', function (req, res) {
 var counter =1;
 app.get('/counter1', function (req, res) {
   counter = counter *2;
-  res.send( counter,toString());
+  res.send(counter,tostring());
 });
 
 app.get('/ui/main.js', function (req, res) {
