@@ -12,6 +12,7 @@ element2.onclick = function() {
   //Go to COunter 1 URL
   var request= new XMLHttpRequest();
   request.open('Get','http://svenkat89.imad.hasura-app.io/counter1',true);
+  request.send(null);
   
   //Get response
   request.onreadystatechange = function() {
