@@ -1,8 +1,8 @@
 console.log('Loaded!');
 var element = document.getElementById("image");
-var element1 = document.getElementById("main");
+//var element1 = document.getElementById("main");
 var counter=1;
-element1.innerHTML='New World';
+//element1.innerHTML='New World';
 element.onclick = function() {
     element.style.marginRight='10px';
 };
