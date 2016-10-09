@@ -43,7 +43,7 @@ element2.onclick = function() {
       if(requestname.readystate==XMLHttpRequest.Done){
           if(requestname.status == 200){
                 var list='';
-                var nameresponse=request.responseText;//storin the response
+                var nameresponse=requestname.responseText;//storin the response
                 nameresponse=JSON.parse(nameresponse);//converting to array again from JSON
                 for(var i =0 ; i < list.length ; i++){
                     list="<li>"+ nameresponse+"</li>";
