@@ -56,7 +56,6 @@ element2.onclick = function() {
       };
       
     var element4 = document.getElementById('submit-comment');
-    var comment = document.getElementById('comment1');
     
     element4.onclick = function() {
       //send name to server
@@ -78,7 +77,7 @@ element2.onclick = function() {
         }
       }
       };
-    
+    };
       
   };
   
