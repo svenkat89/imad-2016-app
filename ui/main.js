@@ -41,8 +41,8 @@ element2.onclick = function() {
           if(requestname.status === 200){
             var list='';
             var nameresponse = requestname.responseText;//storin the response
+            alert(nameresponse);
             nameresponse = JSON.parse(nameresponse);//converting to array again from JSON
-            alert(nameresponse.length);
             for(var i =0 ; i < nameresponse.length ; i++){
                 
                 list="<li>"+ nameresponse[i] +"</li>";
