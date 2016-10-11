@@ -34,19 +34,18 @@ element2.onclick = function() {
   
   element3.onclick = function() {
       //send name to server
-      var requestname = new XMLHttpRequest();
+      var request = new XMLHttpRequest();
       //render the response as a list
-      requestname.onreadystatechange = function() {
+      request.onreadystatechange = function() {
       if(requestname.readystate === XMLHttpRequest.Done){
-          if(requestname.status === 200){
+          if(request.status === 200){
             var list='';
-            var nameresponse = requestname.responseText;//storin the response
-            console.log(nameresponse);
-            var namerespon = JSON.parse(nameresponse);//converting to array again from JSON
-            console.log(namerespon.length);
-            for(var i =0 ; i < namerespon.length ; i++){
+            var nameresponse = request.responseText;//storin the response
+            nameresponse = JSON.parse(nameresponse);//converting to array again from JSON
+            console.log(nameresponse.length);
+            for(var i =0 ; i < nameresponse.length ; i++){
                 
-                list="<li>"+ namerespon[i] +"</li>";
+                list="<li>"+ nameresponse[i] +"</li>";
             }
         var ul= document.getElementById('namelist');
         ul.innerHTML=list;
