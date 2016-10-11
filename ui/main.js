@@ -56,7 +56,7 @@ element2.onclick = function() {
       requestname.send(null);
   };
       
-    var element4 = document.getElementById('submit-comment');
+    var element4 = document.getElementById('submitcomment');
     
     element4.onclick = function() {
       //send name to server
