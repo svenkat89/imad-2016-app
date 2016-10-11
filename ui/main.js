@@ -43,6 +43,7 @@ element2.onclick = function() {
             var nameresponse = requestname.responseText;//storin the response
             console.log(nameresponse);
             nameresponse = JSON.parse(nameresponse);//converting to array again from JSON
+            console.log(nameresponse);
             for(var i =0 ; i < nameresponse.length ; i++){
                 
                 list="<li>"+ nameresponse[i] +"</li>";
