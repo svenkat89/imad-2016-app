@@ -78,7 +78,5 @@ element2.onclick = function() {
         }
       }
       };
-    };
-      
   };
   
