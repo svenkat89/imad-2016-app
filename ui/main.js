@@ -34,7 +34,7 @@ element2.onclick = function() {
   
   element3.onclick = function() {
       //send name to server
-      var requestname= new XMLHttpRequest();
+      var requestname = new XMLHttpRequest();
       //render the response as a list
       requestname.onreadystatechange = function() {
       if(requestname.readystate === XMLHttpRequest.Done){
