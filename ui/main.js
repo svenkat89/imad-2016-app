@@ -31,6 +31,7 @@ element2.onclick = function() {
   //submit name
   //get the value from the text box
   var element3 = document.getElementById('submit_btn');
+  var list='';
   
   element3.onclick = function() {
       //send name to server
@@ -39,7 +40,6 @@ element2.onclick = function() {
       var name1 = nameInput.value;
       requestname.open('Get','http://svenkat89.imad.hasura-app.io/submit?name='+ name1,true);
       requestname.send(null);
-      var list='';
       //render the response as a list
       requestname.onreadystatechange = function() {
       if(requestname.readystate==XMLHttpRequest.Done){
