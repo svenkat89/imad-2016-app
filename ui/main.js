@@ -45,8 +45,8 @@ element2.onclick = function() {
             var nameresponse = ['name1','name2','name3','name4']
             console.log(nameresponse.length);
             for(var i =0 ; i < nameresponse.length ; i++){
-                
-                list="<li>"+ nameresponse[i] +"</li>";
+                console.log(nameresponse[i]);
+                list='<li>'+ nameresponse[i] +'</li>';
             }
         var ul= document.getElementById('namelist');
         ul.innerHTML=list;
