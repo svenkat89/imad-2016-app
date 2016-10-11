@@ -40,13 +40,10 @@ element2.onclick = function() {
       if(request.readystate === XMLHttpRequest.Done){
           if(request.status === 200){
             var list='';
-            //var nameresponse = request.responseText;//storin the response
-            //nameresponse = JSON.parse(nameresponse);//converting to array again from JSON
-            var nameresponse = ['name1','name2','name3','name4'];
-            console.log(nameresponse.length);
+            var nameresponse = request.responseText;//storin the response
+            nameresponse = JSON.parse(nameresponse);//converting to array again from JSON
             for(var i =0 ; i < nameresponse.length ; i++){
-                console.log(nameresponse[i]);
-                list='<li>'+ nameresponse[i] +'</li>';
+                list+='<li>'+ nameresponse[i] +'</li>';
             }
         var ul= document.getElementById('namelist');
         ul.innerHTML=list;
