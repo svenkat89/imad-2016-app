@@ -42,7 +42,7 @@ element2.onclick = function() {
             var list='';
             //var nameresponse = request.responseText;//storin the response
             //nameresponse = JSON.parse(nameresponse);//converting to array again from JSON
-            var nameresponse = ['name1','name2','name3','name4']
+            var nameresponse = ['name1','name2','name3','name4'];
             console.log(nameresponse.length);
             for(var i =0 ; i < nameresponse.length ; i++){
                 console.log(nameresponse[i]);
