@@ -42,11 +42,11 @@ element2.onclick = function() {
             var list='';
             var nameresponse = requestname.responseText;//storin the response
             console.log(nameresponse);
-            nameresponse = JSON.parse(nameresponse);//converting to array again from JSON
-            console.log(nameresponse);
-            for(var i =0 ; i < nameresponse.length ; i++){
+            var namerespon = JSON.parse(nameresponse);//converting to array again from JSON
+            console.log(namerespon.length);
+            for(var i =0 ; i < namerespon.length ; i++){
                 
-                list="<li>"+ nameresponse[i] +"</li>";
+                list="<li>"+ namerespon[i] +"</li>";
             }
         var ul= document.getElementById('namelist');
         ul.innerHTML=list;
