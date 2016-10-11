@@ -37,7 +37,7 @@ element2.onclick = function() {
       var request = new XMLHttpRequest();
       //render the response as a list
       request.onreadystatechange = function() {
-      if(requestname.readystate === XMLHttpRequest.Done){
+      if(request.readystate === XMLHttpRequest.Done){
           if(request.status === 200){
             var list='';
             var nameresponse = request.responseText;//storin the response
