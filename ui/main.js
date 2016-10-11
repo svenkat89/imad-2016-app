@@ -55,5 +55,30 @@ element2.onclick = function() {
       }
       };
       
+    var element4 = document.getElementById('submit-comment');
+    var comment = document.getElementById('comment1');
+    
+    element4.onclick = function() {
+      //send name to server
+      var request= new XMLHttpRequest();
+      request.open('Get','http://svenkat89.imad.hasura-app.io/article-1',true);
+      request.send(null);
+      //render the response as a list
+      request.onreadystatechange = function() {
+      if(request.readystate==XMLHttpRequest.Done){
+          if(request.status == 200){
+            var commentarr='';
+            var comments = request.responseText;//storin the response
+            comments = JSON.parse(comments);//converting to array again from JSON
+            for(var i =0 ; i < comments.length ; i++){
+                commentarr="<textbox>"+ comments[i] +"</textbox>";
+            }
+        var ul= document.getElementById('comment-section');
+        ul.innerHTML=commentarr;
+        }
+      }
+      };
+    
+      
   };
   
