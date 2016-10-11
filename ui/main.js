@@ -55,8 +55,8 @@ element2.onclick = function() {
       };
       var nameInput = document.getElementById('name');
       var name1 = nameInput.value;
-      requestname.open('Get','http://svenkat89.imad.hasura-app.io/submit?name='+ name1,true);
-      requestname.send(null);
+      request.open('Get','http://svenkat89.imad.hasura-app.io/submit?name='+ name1,true);
+      request.send(null);
   };
       
     var element4 = document.getElementById('submitcomment');
