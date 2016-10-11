@@ -39,11 +39,11 @@ element2.onclick = function() {
       var name1 = nameInput.value;
       requestname.open('Get','http://svenkat89.imad.hasura-app.io/submit?name='+ name1,true);
       requestname.send(null);
+      var list='';
       //render the response as a list
       requestname.onreadystatechange = function() {
       if(requestname.readystate==XMLHttpRequest.Done){
           if(requestname.status == 200){
-            var list='';
             var nameresponse = requestname.responseText;//storin the response
             nameresponse = JSON.parse(nameresponse);//converting to array again from JSON
             for(var i =0 ; i < nameresponse.length ; i++){
