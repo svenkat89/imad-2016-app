@@ -31,19 +31,15 @@ element2.onclick = function() {
   //submit name
   //get the value from the text box
   var element3 = document.getElementById('submit_btn');
-  var list='';
   
   element3.onclick = function() {
       //send name to server
       var requestname= new XMLHttpRequest();
-      var nameInput = document.getElementById('name');
-      var name1 = nameInput.value;
-      requestname.open('Get','http://svenkat89.imad.hasura-app.io/submit?name='+ name1,true);
-      requestname.send(null);
       //render the response as a list
       requestname.onreadystatechange = function() {
-      if(requestname.readystate==XMLHttpRequest.Done){
-          if(requestname.status == 200){
+      if(requestname.readystate === XMLHttpRequest.Done){
+          if(requestname.status === 200){
+            var list='';
             var nameresponse = requestname.responseText;//storin the response
             nameresponse = JSON.parse(nameresponse);//converting to array again from JSON
             for(var i =0 ; i < nameresponse.length ; i++){
@@ -54,6 +50,11 @@ element2.onclick = function() {
         }
       }
       };
+      var nameInput = document.getElementById('name');
+      var name1 = nameInput.value;
+      requestname.open('Get','http://svenkat89.imad.hasura-app.io/submit?name='+ name1,true);
+      requestname.send(null);
+  };
       
     var element4 = document.getElementById('submit-comment');
     
