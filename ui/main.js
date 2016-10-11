@@ -40,8 +40,9 @@ element2.onclick = function() {
       if(request.readystate === XMLHttpRequest.Done){
           if(request.status === 200){
             var list='';
-            var nameresponse = request.responseText;//storin the response
-            nameresponse = JSON.parse(nameresponse);//converting to array again from JSON
+            //var nameresponse = request.responseText;//storin the response
+            //nameresponse = JSON.parse(nameresponse);//converting to array again from JSON
+            var nameresponse = ['name1','name2','name3']
             console.log(nameresponse.length);
             for(var i =0 ; i < nameresponse.length ; i++){
                 
