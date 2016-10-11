@@ -13,7 +13,7 @@ app.get('/', function (req, res) {
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
-app.get('/article-1', function (req, res) {
+app.get('/arti-1.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'arti-1.html'));
 });
 var counter=1;
