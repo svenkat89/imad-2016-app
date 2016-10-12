@@ -16,7 +16,7 @@ app.get('/ui/style.css', function (req, res) {
 var comments=[];
 app.get('/article-1', function (req, res) {
    res.sendFile(path.join(__dirname, 'ui', 'arti-1.html'));
-   console.log(document.getElementById('comment1').value)
+   
   //var commentvalue = document.getElementById('comment1').value;
   //comments.push(commentvalue);
   //res.send(JSON.stringify(comments));
