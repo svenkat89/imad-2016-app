@@ -58,8 +58,7 @@ element2.onclick = function() {
   };
       
     var element4 = document.getElementById('submitcomment');
-    
-    
+
     element4.onclick = function() {
       //send name to server
       var request= new XMLHttpRequest();
