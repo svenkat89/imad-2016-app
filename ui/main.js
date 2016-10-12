@@ -72,5 +72,4 @@ element2.onclick = function() {
     //    var ul= document.getElementById('comment_section');
     //    ul.innerHTML=commentarr;
         };
-  });
   
