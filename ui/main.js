@@ -71,6 +71,7 @@ element2.onclick = function() {
           if(request.status == 200){
             var commentarr='';
             var comments = request.responseText;//storin the response
+            console.log(comments);
             comments = JSON.parse(comments);//converting to array again from JSON
             for(var i =0 ; i < comments.length ; i++){
                 commentarr+="<textbox>"+ comments[i] +"</textbox>";
