@@ -71,9 +71,9 @@ element2.onclick = function() {
             var comments = request.responseText;//storin the response
             comments = JSON.parse(comments);//converting to array again from JSON
             for(var i =0 ; i < comments.length ; i++){
-                commentarr="<textbox>"+ comments[i] +"</textbox>";
+                commentarr+="<textbox>"+ comments[i] +"</textbox>";
             }
-        var ul= document.getElementById('comment-section');
+        var ul= document.getElementById('comment_section');
         ul.innerHTML=commentarr;
         }
       }
