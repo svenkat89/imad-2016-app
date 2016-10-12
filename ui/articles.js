@@ -1,7 +1,7 @@
 console.log('loaded');
 var element4 = document.getElementById('submitcomment');
 
-element4.onclick = function() {
+    element4.onclick = function() {
         //send name to server
       var request = new XMLHttpRequest();
       request.open('Get','http://svenkat89.imad.hasura-app.io/article-2',true);
