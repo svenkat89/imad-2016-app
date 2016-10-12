@@ -1,12 +1,12 @@
 console.log('Loaded!');
-var element = document.getElementById('image');
+//var element = document.getElementById('image');
 var counter=1;
 var element2 = document.getElementById('Butt');
 
 
-element.onclick = function() {
-    element.style.marginRight='10px';
-};
+//element.onclick = function() {
+//    element.style.marginRight='10px';
+//};
 
 
 element2.onclick = function() {
