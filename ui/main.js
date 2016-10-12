@@ -65,8 +65,6 @@ element2.onclick = function() {
       var request= new XMLHttpRequest();
       request.open('Get','http://svenkat89.imad.hasura-app.io/article-1',true);
       request.send(null);
-      var commentvalue = document.getElementById('comment1').value;
-        console.log(commentvalue);
       //render the response as a list
       request.onreadystatechange = function() {
       if(request.readystate==XMLHttpRequest.Done){
