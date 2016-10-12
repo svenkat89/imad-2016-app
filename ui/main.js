@@ -59,12 +59,12 @@ element2.onclick = function() {
       
     var element4 = document.getElementById('submitcomment');
     var comments=[];
-    var commentvalue=$("#comment1").value;
-    comments.push(commentvalue);
-    console.log(comments);
      //comments=JSON.stringify(comments);
 
     element4.onclick=function() {
+        var commentvalue=$("#comment1").value;
+        comments.push(commentvalue);
+        console.log(comments);
     //comments = JSON.parse(comments);//converting to array again from JSON
     //        for(var i =0 ; i < comments.length ; i++){
     //            commentarr+="<li>"+ comments[i] +"</li>";
