@@ -4,9 +4,9 @@ var counter=1;
 var element2 = document.getElementById('Butt');
 
 
-//element.onclick = function() {
-//    element.style.marginRight='10px';
-//};
+element.onclick = function() {
+    element.style.marginRight='10px';
+};
 
 
 element2.onclick = function() {
@@ -57,9 +57,9 @@ element2.onclick = function() {
       request.send(null);
   };
       
-    var element4 = document.getElementById('submitcomment');
+var element4 = document.getElementById('submitcomment');
 
-    element4.onclick = function() {
+element4.onclick = function() {
         //send name to server
       var request = new XMLHttpRequest();
       request.open('Get','http://svenkat89.imad.hasura-app.io/article-2',true);
