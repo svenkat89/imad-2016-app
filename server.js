@@ -15,8 +15,8 @@ app.get('/ui/style.css', function (req, res) {
 });
 var comments=[];
 app.get('/arti-1.html', function (req, res) {
-  var comment = document.getElementById('comment1').value;
-  comments.push(comment);
+  var commentvalue = document.getElementById('comment1').value;
+  comments.push(commentvalue);
   res.send(JSON.stringify(comments));
 });
 var counter=1;
