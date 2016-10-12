@@ -4,7 +4,7 @@ var element4 = document.getElementById('submitcomment');
     element4.onclick = function() {
         //send name to server
       var request = new XMLHttpRequest();
-      request.open('Get','http://svenkat89.imad.hasura-app.io/article-2',true);
+      request.open('Get','http://svenkat89.imad.hasura-app.io/article-1',true);
       request.send(null);
       //render the response as a list
       request.onreadystatechange = function() {
