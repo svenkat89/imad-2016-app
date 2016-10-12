@@ -19,7 +19,6 @@ app.get('/article-2', function (req, res) {
 });
 
 app.get('/article-2', function (req, res) {
-    var name=req.params.name;
   var commentvalue = document.getElementById('comment1').value;
   comments.push(commentvalue);
   res.send(JSON.stringify(comments));
