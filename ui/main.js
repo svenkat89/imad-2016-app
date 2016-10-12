@@ -1,5 +1,5 @@
 console.log('Loaded!');
-//var element = document.getElementById('image');
+var element = document.getElementById('image');
 var counter=1;
 var element2 = document.getElementById('Butt');
 
