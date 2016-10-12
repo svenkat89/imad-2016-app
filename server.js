@@ -18,7 +18,8 @@ app.get('/article-2', function (req, res) {
    res.sendFile(path.join(__dirname, 'ui', 'arti-1.html'));
 });
 
-app.get('/article-1', function (req, res) {
+app.get('/article-2', function (req, res) {
+    var name=req.params.name;
   var commentvalue = document.getElementById('comment1').value;
   comments.push(commentvalue);
   res.send(JSON.stringify(comments));
