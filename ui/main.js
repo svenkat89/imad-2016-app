@@ -31,6 +31,10 @@ element2.onclick = function() {
   //submit name
   //get the value from the text box
   var element3 = document.getElementById('submit_btn');
+  var commentvalue = document.getElementById('comment1').value;
+  console.log(commentvalue);
+  //comments.push(commentvalue);
+  //res.send(JSON.stringify(comments));
   
   element3.onclick = function() {
       //send name to server
@@ -57,6 +61,7 @@ element2.onclick = function() {
   };
       
     var element4 = document.getElementById('submitcomment');
+    
     
     element4.onclick = function() {
       //send name to server
