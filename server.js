@@ -15,7 +15,7 @@ app.get('/ui/style.css', function (req, res) {
 });
 var comments=[];
 app.get('/article-2', function (req, res) {
-   res.render('/ui/arti-1.html');
+   res.render('arti-1');
   var commentvalue = document.getElementById('comment1').value;
   comments.push(commentvalue);
   res.send(JSON.stringify(comments));
