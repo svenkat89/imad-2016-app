@@ -72,7 +72,7 @@ element2.onclick = function() {
             var comments = request.responseText;//storin the response
             comments = JSON.parse(comments);//converting to array again from JSON
             for(var i =0 ; i < comments.length ; i++){
-                commentlist+='<li>'+ nameresponse[i] +'</li>';
+                commentlist+='<textrea>'+ comments[i] +'</textarea>';
             }
         var ul= document.getElementById('comment_section');
         ul.innerHTML=commentlist;
