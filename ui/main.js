@@ -58,27 +58,20 @@ element2.onclick = function() {
   };
       
     var element4 = document.getElementById('submitcomment');
+    var comments=[];
+  $(document).ready(function(){
+     var commentvalue=$("#comment1").value;
+     comments.push(commentvalue);
+     console.log(comments);
+     //comments=JSON.stringify(comments);
 
-    element4.onclick = function() {
-      //send name to server
-      var request= new XMLHttpRequest();
-      request.open('Get','http://svenkat89.imad.hasura-app.io/article-1',true);
-      request.send(null);
-      //render the response as a list
-      request.onreadystatechange = function() {
-      if(request.readystate==XMLHttpRequest.Done){
-          if(request.status == 200){
-            var commentarr='';
-            var comments = request.responseText;//storin the response
-            console.log(comments);
-            comments = JSON.parse(comments);//converting to array again from JSON
-            for(var i =0 ; i < comments.length ; i++){
-                commentarr+="<textbox>"+ comments[i] +"</textbox>";
-            }
-        var ul= document.getElementById('comment_section');
-        ul.innerHTML=commentarr;
-        }
-      }
-      };
-  };
+    //element4.onclick(function() {
+    //        comments = JSON.parse(comments);//converting to array again from JSON
+    //        for(var i =0 ; i < comments.length ; i++){
+    //            commentarr+="<li>"+ comments[i] +"</li>";
+    //        }
+    //    var ul= document.getElementById('comment_section');
+    //    ul.innerHTML=commentarr;
+        });
+  });
   
