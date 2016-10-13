@@ -16,9 +16,6 @@ app.get('/ui/style.css', function (req, res) {
 var comments=[];
 app.get('/article-2', function (req, res) {
    res.sendFile(path.join(__dirname, 'ui', 'arti-1.html'));
-     var commentvalue = document.getElementById('comment1').value;
-  comments.push(commentvalue);
-  res.send(JSON.stringify(comments));
 });
 var counter=1;
 app.get('/counter1', function (req, res) {
