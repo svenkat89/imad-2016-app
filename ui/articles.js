@@ -1,10 +1,11 @@
 console.log('loaded');
-  console.log(document.getElementById('comment1').value);
   //comments.push(commentvalue);
   //res.send(JSON.stringify(comments));
 var element4 = document.getElementById('submitcomment');
 
     element4.onclick = function() {
+        //console.log(document.getElementById('comment1').value);
+        alert(document.getElementById('comment1').value);
         //send name to server
       var request = new XMLHttpRequest();
       request.open('Get','http://svenkat89.imad.hasura-app.io/article-1',true);
