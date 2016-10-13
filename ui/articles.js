@@ -3,9 +3,9 @@ console.log('loaded');
   //res.send(JSON.stringify(comments));
 var element4 = document.getElementById('submitcomment');
     element4.onclick = function() {
-        var comments=[];
+        var comments='';
         //console.log(document.getElementById('comment1').value);
-        comments=(document.getElementById('comment1').value);
+        comments+=(document.getElementById('comment1').value);
         //send name to server
         console.log(comments);
             var commentlist='';
