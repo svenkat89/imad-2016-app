@@ -1,9 +1,9 @@
 console.log('loaded');
   //comments.push(commentvalue);
   //res.send(JSON.stringify(comments));
+  var comments='';
 var element4 = document.getElementById('submitcomment');
     element4.onclick = function() {
-        var comments='';
         //console.log(document.getElementById('comment1').value);
         comments+=(document.getElementById('comment1').value);
         //send name to server
