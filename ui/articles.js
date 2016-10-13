@@ -1,4 +1,7 @@
 console.log('loaded');
+  console.log(document.getElementById('comment1').value);
+  //comments.push(commentvalue);
+  //res.send(JSON.stringify(comments));
 var element4 = document.getElementById('submitcomment');
 
     element4.onclick = function() {
