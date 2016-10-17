@@ -2,9 +2,9 @@ console.log('loaded');
   //comments.push(commentvalue);
   //res.send(JSON.stringify(comments));
   var comments=[];
-  var valuecomment=(document.getElementById('comment1').value);
     var element4 = document.getElementById('submitcomment');
     element4.onclick = function() {
+        var valuecomment=(document.getElementById('comment1').value);
         //console.log(document.getElementById('comment1').value);
         var commentlist='';
          comments.push(valuecomment);
