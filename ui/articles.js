@@ -8,8 +8,9 @@ console.log('loaded');
         var commentlist='';
          var valuecomment=(document.getElementById('comment1').value);
          comments.push(valuecomment);
+         console.log(comments)
         for(var i =0 ; i < comments.length ; i++){
-            commentlist+='<textrea>'+ comments[i] +'</textarea>';
+            commentlist+='<li>'+ comments[i] +'</li>';
             }
         var ul= document.getElementById('comment_section');
         ul.innerHTML=commentlist;
