@@ -7,7 +7,7 @@ var element4 = document.getElementById('submitcomment');
         //console.log(document.getElementById('comment1').value);
         var commentlist='';
          var valuecomment=(document.getElementById('comment1').value);
-            for (var j=0;j<=5;j++)
+            for (var j=1;j<=5;j++)
             {
                comments[j]=valuecomment; 
             }
