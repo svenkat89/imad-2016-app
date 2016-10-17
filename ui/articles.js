@@ -6,7 +6,11 @@ var element4 = document.getElementById('submitcomment');
     element4.onclick = function() {
         //console.log(document.getElementById('comment1').value);
         var commentlist='';
-            comments=(document.getElementById('comment1').value);
+         var valuecomment=(document.getElementById('comment1').value);
+            for (var j=0;j<=5;j++)
+            {
+               comments[j]=valuecomment; 
+            }
         for(var i =0 ; i < comments.length ; i++){
             commentlist+='<textrea>'+ comments[i] +'</textarea>';
             }
