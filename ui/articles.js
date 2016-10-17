@@ -1,11 +1,10 @@
 console.log('loaded');
   //comments.push(commentvalue);
   //res.send(JSON.stringify(comments));
-  
+  var comments=[];
 var element4 = document.getElementById('submitcomment');
     element4.onclick = function() {
         //console.log(document.getElementById('comment1').value);
-        var comments=[];
         var commentlist='';
         for(var j=1;j<=5;j++){
             comments[j]=(document.getElementById('comment1').value);
